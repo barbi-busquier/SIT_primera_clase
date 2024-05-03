@@ -1,0 +1,122 @@
+<html>
+<head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"> </script>
+
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+ <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+ <script src="reloj.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body class="fondo">
+    <header class="lol"> BUFFET </header>
+    <div id="reloj"></div>
+    <div id="gran_div">
+    <div class="menu"> Men&uacute; </div>
+    <div class="menu"> Precios </div>
+    <div class="menu"> Horarios </div>
+    </div>
+
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+      
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="titulo">
+                    <img src="img/muffin-de-chocolate.jpg" width="600px" alt="muffins"> </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="titulo">
+                        <img src="img/chocotorta.jpg" width="600px" alt="chocotorta">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="titulo">
+                        <img src="img/brownie.jpg" width="600px" alt="brownie">
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      
+      </div>
+
+    <div id="gran_div">
+        <div class="menu2"> MEN&Uacute; 
+            <li> Cookies </li>
+            <li> Brownie </li>
+            <li> Cuadraditos de lim&oacute;n </li>
+            <li> Cupcakes de chocolate </li>
+            <li> Tarta de manzana </li>
+            <li> Alfajores de maizena </li>
+        </div>
+        <div class="menu2"> Alumnos
+            <li> Ana Botello </li>
+            <li> B&aacute;rbara Busquier </li>
+            <li> Ayla Gitelman </li>
+            <li> Guillermo Mooney </li>
+            <li> Pedro Otero </li>
+            <li> Sofia Primante </li>
+            <li> Justo Raris </li>
+            <li> Juaquin Ribera </li>
+            <li> Romina Sumen </li>
+        </div>
+        <div class="menu2"> HORARIOS
+            <li> Primer recreo: 9:10 a 9:25 </li>
+            <li> Segundo recreo: 10:40 a 10:55 </li> 
+        </div>
+    </div>
+
+    <form action="/clase_3/form.php" method="POST" class="formulario">
+        Si nos queres contactar o mandarnos alguna sugerencia
+        <div class="formulariotexto">
+            <div class="formulariorelleno">
+                <label for="name"> Nombre: </label>
+            </div>
+            <div class="formulariorelleno"> 
+                <input type="text" id="name" name="name">
+            </div>   
+        </div>
+        <div class="formulariotexto">
+            <div class="formulariorelleno">
+                <label for="email"> Correo electr&oacute;nico: </label>
+            </div>
+            <div class="formulariorelleno">
+                <input type="email" id="email">
+            </div>
+        </div>
+        <div class="formulariotexto">
+            <div class="formulariorelleno">
+                <label for="comentario"> Sugerencias: </label>
+            </div>
+            <div class="formulariorelleno">
+                <input type="text" id="comentario">
+            </div>
+        </div>
+        <button type="submit"> Enviar mensaje </button>
+    </form>
+    
+    <footer class="footer">
+        Gracias por visitar la pagina!!
+    </footer>    
+    </body>
+    </html>
